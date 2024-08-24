@@ -1,40 +1,89 @@
-.img1 {
-  content: url("https://picsum.photos/id/237/200/300");
+.body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+  background-color: #f9f9f9;
 }
 
-.img2 {
-  content: url("https://picsum.photos/seed/picsum/200/300");
+#h {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #333;
 }
 
-.img3 {
-  content: url("https://picsum.photos/200/300?grayscale");
-}
-.img4 {
-  content: url("https://picsum.photos/200/300/");
-}
-.img5 {
-  content: url("https://picsum.photos/200/300.jpg");
-}
-
-img {
-  margin: 10px;
-  border: 5px solid #555;
-  width: 10%;
-}
-
-.flex {
+#image-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
-.selected {
-  border: 5px solid rgb(0, 195, 255);
+#image-container img {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s;
 }
 
-p {
-  text-align: center;
+#image-container img.selected {
+  border-color: #4caf50;
 }
 
 button {
-  margin: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#reset {
+  background-color: #f44336;
+  color: #fff;
+}
+
+#verify {
+  background-color: #008cba;
+  color: #fff;
+}
+
+#para {
+  font-size: 22px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Image Classes with Background Images */
+.img1 {
+  background-image: url('https://source.unsplash.com/random/200x200?nature');
+  background-size: cover;
+  background-position: center;
+}
+
+.img2 {
+  background-image: url('https://source.unsplash.com/random/200x200?water');
+  background-size: cover;
+  background-position: center;
+}
+
+.img3 {
+  background-image: url('https://source.unsplash.com/random/200x200?forest');
+  background-size: cover;
+  background-position: center;
+}
+
+.img4 {
+  background-image: url('https://source.unsplash.com/random/200x200?city');
+  background-size: cover;
+  background-position: center;
+}
+
+.img5 {
+  background-image: url('https://source.unsplash.com/random/200x200?mountain');
+  background-size: cover;
+  background-position: center;
 }
